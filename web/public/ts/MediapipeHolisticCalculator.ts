@@ -21,7 +21,7 @@ export default class MediapipeHolisticCalculator {
 
         this.holistic = new Holistic({
             locateFile: (file) => {
-                return `https://cdn.jsdelivr.net/npm/@mediapipe/holistic@0.1/${file}`;
+                return `https://cdn.jsdelivr.net/npm/@mediapipe/holistic@0.4.1628005088/${file}`;
             }
         });
         this.holistic.setOptions({

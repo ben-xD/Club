@@ -17,6 +17,12 @@
 
 - Create a cloudflare account
 - Fork the repo, and create a [cloudflare page](https://pages.cloudflare.com/) pointing to your new Github repo.
+- For Build settings: 
 - Add these environment variables with their new values (from [getting started](#getting-started)) to your new cloudflare page settings: (the same ones from .env.local):
   - `NEXT_PUBLIC_CLUB2D_API_URL`
   - `NEXT_PUBLIC_ABLY_UPLOAD_FRAME_RATE`
+
+
+## When upgrading `@mediapipe/holistic`
+- Remember to also update the URL where the assets are downloaded from:
+  - https://cdn.jsdelivr.net/npm/@mediapipe/holistic@0.4.1628005088/${file}` in `MediaPipeHolisticCalculator.ts`
